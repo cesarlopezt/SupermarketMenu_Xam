@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SupermarketMenuPage.Views.MenuPage"
+             Title="Supermarket"
+             xmlns:views="clr-namespace:SupermarketMenuPage.Views">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, Auto, Auto" 
+              ColumnDefinitions="*,*" 
+              RowSpacing="15"
+              ColumnSpacing="15"
+              Padding="15" 
+              VerticalOptions="Center">
+            <views:MenuItemView Grid.Row="0" Grid.Column="0" BindingContext="{Binding GeneralItem}" />
+            <views:MenuItemView Grid.Row="0" Grid.Column="1" BindingContext="{Binding ClothesItem}" />
+            <views:MenuItemView Grid.Row="1" Grid.Column="0" BindingContext="{Binding CleaningItem}" />
+            <views:MenuItemView Grid.Row="1" Grid.Column="1" BindingContext="{Binding CelebrationItem}" />
+            <views:MenuItemView Grid.Row="2" Grid.Column="0" BindingContext="{Binding BabiesItem}" />
+            <views:MenuItemView Grid.Row="2" Grid.Column="1" BindingContext="{Binding PetsItem}" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
