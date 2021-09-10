@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SupermarketMenuPage.Views.MenuItemView">
     <StackLayout>
-        <Image Source="{Binding Img}" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" />
-        <Label Text="{Binding Title}" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center" />
-        <Label Text="{Binding Description}" FontSize="Small" HorizontalOptions="Center" />
+        <Image Source="{Binding Img}" Style="{StaticResource ImageStyle}" />
+        <Label Text="{Binding Title}" Style="{StaticResource TitleLabelStyle}" />
+        <Label Text="{Binding Description}" Style="{StaticResource DescriptionLabelStyle}" />
     </StackLayout>
 </Frame>

@@ -22,7 +22,7 @@ namespace SupermarketMenuPage.ViewModels
             ClothesItem = new MenuItem("Clothes", "500 items", "clothes");
             CelebrationItem = new MenuItem("Party Supplies", "250 items", "party");
             PetsItem = new MenuItem("Pet Items", "150 items", "pets");
-            CleaningItem = new MenuItem("Cleaning Items", "300 items", "cleaning");
+            CleaningItem = new MenuItem("Cleaning", "300 items", "cleaning");
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

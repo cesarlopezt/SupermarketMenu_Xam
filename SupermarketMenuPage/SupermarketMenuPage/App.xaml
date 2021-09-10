@@ -3,6 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SupermarketMenuPage.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style x:Key="TitleLabelStyle" TargetType="Label">
+                <Setter Property="FontAttributes"  Value="Bold"/>
+                <Setter Property="FontSize"  Value="Medium"/>
+                <Setter Property="HorizontalOptions"  Value="Center"/>
+            </Style>
+            <Style x:Key="DescriptionLabelStyle" TargetType="Label">
+                <Setter Property="FontSize"  Value="Small"/>
+                <Setter Property="HorizontalOptions"  Value="Center"/>
+            </Style>
+            <Style x:Key="ImageStyle" TargetType="Image">
+                <Setter Property="HeightRequest"  Value="100"/>
+                <Setter Property="WidthRequest"  Value="100"/>
+                <Setter Property="HorizontalOptions"  Value="Center"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
